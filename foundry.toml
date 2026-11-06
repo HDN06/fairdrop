@@ -1,0 +1,14 @@
+[profile.default]
+src = "contracts"
+test = "test"
+script = "script"
+out = "out"
+libs = ["lib"]
+solc = "./script/solcjs-wrapper"
+auto_detect_solc = false
+optimizer = true
+optimizer_runs = 200
+
+remappings = [
+  "@openzeppelin/contracts/=node_modules/@openzeppelin/contracts/"
+]
